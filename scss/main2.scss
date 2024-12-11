@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #222;
+}
+
+$Body-font : 'Roboto';
+$Heading-font : 'Playfair Display';
+
+nav {
+    max-width: 90%;
+    margin-inline: auto;
+    background-color: white;
+    
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px 0;
+        width: 100%;
+        background-color: #eee;
+        
+        .nav-title {
+            background-color: #eee;
+            font-family: $Heading-font;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    @media screen and (min-width:1200px) {
+        scroll-snap-align: start;
+        height: 80px;
+        background-color: #222;
+    }
+}
+
+
+main{
+    max-width: 90%;
+    margin-inline: auto;
+    
+    .sec1{
+        margin-top: 10px;
+        .intro{
+                text-align: justify;
+                font-family: $Body-font;
+                font-size:14px;
+                font-weight: 500;
+                color: #fff;
+                line-height: 1.8;
+                @media screen and (min-width:576px){
+                    font-size: 18px;
+                }
+                @media screen and (min-width:768px){
+                    font-size: 24px;
+                }
+
+                .ins{
+                    margin: 10px 0;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    div{
+                        border: 3px solid rgb(195, 59, 59);
+                        padding: 10px;
+                    }
+                    @media screen and (max-width:576px){
+                        flex-direction: column;
+                        font-size: 18px;
+                    }
+                }
+                .funny{
+                    color: red;
+                    font-weight: 700;
+                }
+        }
+        @media  screen and (min-width:1200px) {
+            height: 600px;
+        }
+    }
+
+    .main-links {
+        
+        margin: 45px 0;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+
+        button {
+            
+             background-color: #D65C68;
+             height: 48px;
+             padding: 0 25px;
+             border: none;
+             border-radius: 10px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 25px;
+                @media screen and (max-width:576px){
+                    font-size: 18px !important;
+                }
+            }
+            @media screen and (max-width:576px){
+                height: 36px !important;
+                padding: 0 20px !important;
+                
+            }
+        }
+
+        .ins2{
+            background-color: #b9cd60 !important;
+            @media screen and (max-width:576px){
+                font-size: 18px !important;
+            }
+        }
+    }
+
+
+    .sec2 {
+        // height: 100vh;
+        
+        margin-top: 45px;
+        .result-container {
+            // padding: 25px 45px;
+            height: 100px;
+            display: grid;
+            grid-template-columns: 1fr;
+            place-content: center;
+            gap: 10px;
+            margin-inline: auto;
+
+            .result-fonts{
+                color: white;
+                // border: 1px solid red;
+                display: flex;
+                gap: 18px;
+                p{
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+
+            .clear{
+                button{
+                    height: 40px;
+                    width: 70px;
+                    background-color: rgb(231, 40, 40);
+                    color: white;
+                    border-radius: 10px 5px;
+                    display: grid;
+                    place-content: center;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+        .cgpa-calc-container {
+            // padding-top: 0 25px; web
+
+            .grades-num {
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                margin: 18px 0;
+                
+                .badge {
+                    font-size: 10px;
+                    @media screen and (min-width:576px) {
+                        font-size: 13px;
+                    }
+                    @media screen and (min-width:768px) {
+                        font-size: 18px;
+                    }
+                    padding: 0.35em 0.65em;
+                    font-weight: 700;
+                    color: white;
+                    border-radius: 0.25rem;
+                }
+
+                .bg-1 {
+                    background-color: #00BC8C;
+                    strong{
+                        background-color: #00BC8C;
+                    }
+                }
+
+                .bg-2 {
+                    background-color: #E893CF;
+                    strong{
+                        background-color: #E893CF;
+                    }
+                }
+
+                .bg-3 {
+                    background-color: #F24C3D;
+                    strong{
+                    background-color: #F24C3D;
+                    }
+                }
+            }
+
+            .row {
+                margin-inline: auto;
+                display: flex;
+                justify-content: space-around;
+                gap: 40px;
+
+                .grade-input-container,
+                .credits-input-container {
+                    width: 35%;
+                    @media screen and (min-width:576px) {
+                        width: 20%;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    strong {
+                        color: white;
+                        font-size: 13px;
+                        margin-bottom:3px;
+                        @media screen and (min-width:576px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                input,select {
+                    border: none;
+                    border-radius: 4px;
+                    padding: 6px;
+                    background-color: #4E6E81;
+                    color: white;
+
+                    &:focus {
+                        color: black;
+                        background-color: white;
+                        outline: none;
+                    }
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+
+            }
+
+            .main-links {
+                margin: 25px 0;
+                display: flex;
+                justify-content: center;
+                gap: 25px;
+
+                button {
+                    background-color: #D65C68;
+                    height: 48px;
+                    padding: 0 25px;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+            
+        }
+
+        @media  screen and (min-width:1200px) {
+            scroll-snap-align: start;
+        }
+
+    }
+
+
+}
+
+footer{
+    margin-top: 5px;
+    border-top: 1px solid white;
+    // height: 65px;/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{    
+        font-weight: 700;
+        color: white;
+    }
+    .social-links {
+        // margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social-icon {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        color: #1da1f2; /* A bright blue color for hover */
+    }
+    
+    .social-icon i {
+        vertical-align: middle;
+    }
+    @media  screen and (max-width:400px) {
+        p{
+            font-size:14px;
+        }
+    }
+}

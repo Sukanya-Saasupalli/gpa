@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+nav {
+  max-width: 90%;
+  margin-inline: auto;
+  background-color: white;
+}
+nav .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0;
+  width: 100%;
+  background-color: #eee;
+}
+nav .nav-container .nav-title {
+  background-color: #eee;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (min-width: 1200px) {
+  nav {
+    scroll-snap-align: start;
+    height: 80px;
+    background-color: #222;
+  }
+}
+
+main {
+  max-width: 90%;
+  margin-inline: auto;
+}
+main .sec1 {
+  margin-top: 10px;
+}
+main .sec1 .intro {
+  text-align: justify;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.8;
+}
+@media screen and (min-width: 576px) {
+  main .sec1 .intro {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .sec1 .intro {
+    font-size: 24px;
+  }
+}
+main .sec1 .intro .ins {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+main .sec1 .intro .ins div {
+  border: 3px solid rgb(195, 59, 59);
+  padding: 10px;
+}
+@media screen and (max-width: 576px) {
+  main .sec1 .intro .ins {
+    flex-direction: column;
+    font-size: 18px;
+  }
+}
+main .sec1 .intro .funny {
+  color: red;
+  font-weight: 700;
+}
+@media screen and (min-width: 1200px) {
+  main .sec1 {
+    height: 600px;
+  }
+}
+main .main-links {
+  margin: 45px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+main .main-links button {
+  background-color: #D65C68;
+  height: 48px;
+  padding: 0 25px;
+  border: none;
+  border-radius: 10px;
+}
+main .main-links button a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+@media screen and (max-width: 576px) {
+  main .main-links button a {
+    font-size: 18px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  main .main-links button {
+    height: 36px !important;
+    padding: 0 20px !important;
+  }
+}
+main .main-links .ins2 {
+  background-color: #b9cd60 !important;
+}
+@media screen and (max-width: 576px) {
+  main .main-links .ins2 {
+    font-size: 18px !important;
+  }
+}
+main .sec2 {
+  margin-top: 45px;
+}
+main .sec2 .result-container {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  gap: 10px;
+  margin-inline: auto;
+}
+main .sec2 .result-container .result-fonts {
+  color: white;
+  display: flex;
+  gap: 18px;
+}
+main .sec2 .result-container .result-fonts p {
+  font-size: 24px;
+  font-weight: 700;
+}
+main .sec2 .result-container .clear button {
+  height: 40px;
+  width: 70px;
+  background-color: rgb(231, 40, 40);
+  color: white;
+  border-radius: 10px 5px;
+  display: grid;
+  place-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+main .sec2 .cgpa-calc-container .grades-num {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 18px 0;
+}
+main .sec2 .cgpa-calc-container .grades-num .badge {
+  font-size: 10px;
+  padding: 0.35em 0.65em;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.25rem;
+}
+@media screen and (min-width: 576px) {
+  main .sec2 .cgpa-calc-container .grades-num .badge {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .sec2 .cgpa-calc-container .grades-num .badge {
+    font-size: 18px;
+  }
+}
+main .sec2 .cgpa-calc-container .grades-num .bg-1 {
+  background-color: #00BC8C;
+}
+main .sec2 .cgpa-calc-container .grades-num .bg-1 strong {
+  background-color: #00BC8C;
+}
+main .sec2 .cgpa-calc-container .grades-num .bg-2 {
+  background-color: #E893CF;
+}
+main .sec2 .cgpa-calc-container .grades-num .bg-2 strong {
+  background-color: #E893CF;
+}
+main .sec2 .cgpa-calc-container .grades-num .bg-3 {
+  background-color: #F24C3D;
+}
+main .sec2 .cgpa-calc-container .grades-num .bg-3 strong {
+  background-color: #F24C3D;
+}
+main .sec2 .cgpa-calc-container .row {
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+main .sec2 .cgpa-calc-container .row .grade-input-container,
+main .sec2 .cgpa-calc-container .row .credits-input-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media screen and (min-width: 576px) {
+  main .sec2 .cgpa-calc-container .row .grade-input-container,
+  main .sec2 .cgpa-calc-container .row .credits-input-container {
+    width: 20%;
+  }
+}
+main .sec2 .cgpa-calc-container .row .grade-input-container strong,
+main .sec2 .cgpa-calc-container .row .credits-input-container strong {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+@media screen and (min-width: 576px) {
+  main .sec2 .cgpa-calc-container .row .grade-input-container strong,
+  main .sec2 .cgpa-calc-container .row .credits-input-container strong {
+    font-size: 20px;
+  }
+}
+main .sec2 .cgpa-calc-container .row input, main .sec2 .cgpa-calc-container .row select {
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  background-color: #4E6E81;
+  color: white;
+}
+main .sec2 .cgpa-calc-container .row input:focus, main .sec2 .cgpa-calc-container .row select:focus {
+  color: black;
+  background-color: white;
+  outline: none;
+}
+main .sec2 .cgpa-calc-container .row input::-webkit-outer-spin-button,
+main .sec2 .cgpa-calc-container .row input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main .sec2 .cgpa-calc-container .row input[type=number] {
+  -moz-appearance: textfield;
+}
+main .sec2 .cgpa-calc-container .main-links {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+main .sec2 .cgpa-calc-container .main-links button {
+  background-color: #D65C68;
+  height: 48px;
+  padding: 0 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main .sec2 .cgpa-calc-container .main-links button a {
+  font-size: 25px;
+}
+@media screen and (min-width: 1200px) {
+  main .sec2 {
+    scroll-snap-align: start;
+  }
+}
+
+
+footer {
+  margin-top: 5px;
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-weight: 700;
+  color: white;
+}
+footer .social-links {
+  align-items: center;
+  justify-content: center;
+}
+footer .social-icon {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+footer .social-icon:hover {
+  color: #1da1f2; /* A bright blue color for hover */
+}
+footer .social-icon i {
+  vertical-align: middle;
+}
+@media screen and (max-width: 400px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=main2.css.map */

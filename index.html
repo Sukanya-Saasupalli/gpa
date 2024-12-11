@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="icon" type="image/png" href="./favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat&family=Playfair+Display&family=Roboto&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/main2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+
+<body>
+
+    <nav id="nav">
+        <div class="nav-container">
+            <div class="nav-title">GPA CALCULATOR</div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="sec1" id="secy">
+
+            <div class="intro">
+                <p>
+                    Welcome to my website, where calculating your academic performance has never been easier! I understand
+                    the importance of keeping track of your grades, and that's why i created this tool to help you
+                    calculate your SGPA and CGPA effortlessly.
+                </p>
+
+                <p>
+                    SGPA (Semester Grade Point Average) is a measure of your academic performance in a single semester, whereas
+                    CGPA (Cumulative Grade Point Average) reflects your overall academic performance throughout your academic career.
+                </p>
+
+                <div class="ins" id="instruc"> 
+
+                    <div>
+                        <p><strong>For SGPA CALCULATION</strong></p>
+                        <p>Enter each subject grade on the left side and enter the corresponding subject credit on the right side.</p>
+                    </div>
+
+                    <div>
+                        <p><strong>For CGPA CALCULATION</strong></p>
+                        <p>Enter each semester SGPA on the left side and enter the corresponding semester Total credits on right side.</p>
+                    </div>
+
+                </div>
+
+                <p>
+                    <!-- This GPA calculator is an essential tool for everyone who values academic excellence. So why wait? Start calculating your GPA today and take the first step
+                    towards achieving your academic goals! -->
+                </p>
+                <p>Click CALCULATE to start calculating..... All the best with your result</p>
+                <!-- <p class="funny">This website wont crash so dont worry 😌😉</p> -->
+            </div>
+
+            <div class="main-links">
+                <button>
+                    <a href="#sec-2">CALCULATE</a>
+                </button>
+            </div>
+        </section>
+
+        <section class="sec2" id="sec-2">
+
+            <div class="result-container">
+                <div class="gpa-result result-fonts">
+                    <h1>GPA : </h1>
+                    <p id="gpa-cont"></p>
+                </div>
+                <div class="total-credits result-fonts">
+                    <h1>Total Credits : </h1>
+                    <p id="tc-cont"></p>
+                </div>
+                <div class="clear">
+                    <button onClick="window.location.reload();">Clear</button>
+                </div>
+            </div>
+
+            <div class="cgpa-calc-container">
+
+                <div class="grades-num">
+                    <span class="badge bg-1"> <strong>O</strong> : 10</span>
+                    <span class="badge bg-1"> <strong>A+</strong> : 9</span>
+                    <span class="badge bg-1"> <strong>A</strong> : 8</span>
+                    <span class="badge bg-2"> <strong>B+</strong> : 7</span>
+                    <span class="badge bg-2"> <strong>B</strong> : 6</span>
+                    <span class="badge bg-2"> <strong>C</strong> : 5</span>
+                    <span class="badge bg-3"> <strong>F</strong> : 0</span>
+                </div>
+
+                <div class="row justify-content-center" id="fullform">
+                    <div class="grade-input-container">
+                        <strong>
+                            Grades <small id="smally">or SGPA</small>
+                        </strong>
+                        <input type="number" class="grades-input" placeholder="" id="s0" />
+                        <input type="number" class="grades-input" placeholder="" id="s1" />
+                        <input type="number" class="grades-input" placeholder="" id="s2" />
+                        <input type="number" class="grades-input" placeholder="" id="s3" />
+                        <input type="number" class="grades-input" placeholder="" id="s4" />
+                        <input type="number" class="grades-input" placeholder="" id="s5" />
+                        <input type="number" class="grades-input" placeholder="" id="s6" />
+                        <input type="number" class="grades-input" placeholder="" id="s7" />
+                        <input type="number" class="grades-input" placeholder="" id="s8" />
+                        <input type="number" class="grades-input" placeholder="" id="s9" />
+                    </div>
+                    <div class="credits-input-container">
+                        <strong>
+                            Credits <small id="smally">or TCS</small>
+                        </strong>
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s0" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s1" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s2" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s3" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s4" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s5" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s6" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s7" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s8" />
+                        <input type="number" class="form-control form-control-sm spx credits-input" placeholder=""
+                            id="s9" />
+                    </div>
+                </div>
+                <div class="main-links">
+                    <button class="ins1">
+                        <a id="submit">SUBMIT</a>
+                    </button>
+                    <button class="ins2">
+                        <a href="#nav">How to Calulate</a>
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made by Sukanya Saasupalli</p>
+        <div class="social-links">
+            <a href="https://github.com/Sukanya-Saasupalli" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/saasupalli-sukanya-b53a94224/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            </a>
+        </div>
+        <!-- <p>&nbsp; Design Inspired from S E Prince Joseph</p> -->
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

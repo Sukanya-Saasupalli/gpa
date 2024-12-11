@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 90;
+  font-family: "Lato", sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: 100vh 100vh;
+    scroll-snap-type: y mandatory;
+  }
+}
+
+body {
+  background-color: #222;
+  max-width: 1094px;
+}
+body nav {
+  scroll-snap-align: start;
+  height: 20vh;
+}
+body nav .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0;
+  width: 100%;
+  background-color: #eee;
+}
+body nav .nav-container .nav-title {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: 600;
+}
+body main {
+  max-width: 1190px;
+  margin-inline: auto;
+}
+body main .sec1 {
+  height: 80vh;
+  overflow: hidden;
+}
+body main .sec1 .intro {
+  text-align: justify;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.8;
+}
+body main .sec1 .main-links {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+body main .sec1 .main-links button {
+  background-color: #D65C68;
+  height: 48px;
+  padding: 0 25px;
+  border: none;
+  border-radius: 10px;
+}
+body main .sec1 .main-links button a {
+  font-size: 25px;
+}
+body main .sec2 {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+body main .sec2 .result-container {
+  padding: 25px 45px;
+  height: 120px;
+  display: grid;
+  gap: 5px;
+}
+body main .sec2 .result-container .result-fonts {
+  color: white;
+  display: flex;
+  gap: 18px;
+}
+body main .sec2 .result-container .result-fonts p {
+  font-size: 24px;
+  font-weight: 700;
+}
+body main .sec2 .cgpa-calc-container {
+  padding-top: 0 25px;
+}
+body main .sec2 .cgpa-calc-container .grades-num {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 18px 0;
+}
+body main .sec2 .cgpa-calc-container .grades-num .badge {
+  padding: 0.35em 0.65em;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.25rem;
+}
+body main .sec2 .cgpa-calc-container .grades-num .bg-1 {
+  background-color: #00BC8C;
+}
+body main .sec2 .cgpa-calc-container .grades-num .bg-2 {
+  background-color: #E893CF;
+}
+body main .sec2 .cgpa-calc-container .grades-num .bg-3 {
+  background-color: #F24C3D;
+}
+body main .sec2 .cgpa-calc-container .row {
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+body main .sec2 .cgpa-calc-container .row .grade-input-container,
+body main .sec2 .cgpa-calc-container .row .credits-input-container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+body main .sec2 .cgpa-calc-container .row .grade-input-container strong,
+body main .sec2 .cgpa-calc-container .row .credits-input-container strong {
+  color: white;
+  font-size: 20px;
+}
+body main .sec2 .cgpa-calc-container .row input, body main .sec2 .cgpa-calc-container .row select {
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  background-color: #4E6E81;
+  color: white;
+}
+body main .sec2 .cgpa-calc-container .row input:focus, body main .sec2 .cgpa-calc-container .row select:focus {
+  color: black;
+  background-color: white;
+  outline: none;
+}
+body main .sec2 .cgpa-calc-container .row input::-webkit-outer-spin-button,
+body main .sec2 .cgpa-calc-container .row input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body main .sec2 .cgpa-calc-container .row input[type=number] {
+  -moz-appearance: textfield;
+}
+body main .sec2 .cgpa-calc-container .main-links {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+body main .sec2 .cgpa-calc-container .main-links button {
+  background-color: #D65C68;
+  height: 48px;
+  padding: 0 25px;
+  border: none;
+  border-radius: 10px;
+}
+body main .sec2 .cgpa-calc-container .main-links button a {
+  font-size: 25px;
+}
+body main .btn-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+body main .btn-links button {
+  height: 48px;
+  width: 60px;
+  font-family: "Roboto";
+}
+body a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  body main .sec1 {
+    height: unset;
+  }
+  body main .sec1 .intro {
+    font-size: 14px;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
